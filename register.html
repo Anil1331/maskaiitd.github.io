@@ -517,6 +517,7 @@ font-size: 30px;">Here is your code : </h1>
           // Execute any logic that should take place if the save fails.
           // error is a Parse.Error with an error code and description.
           document.getElementById("blurback1").style.display = "none";
+          document.getElementById("send").style.display = "block";
 		$("#fillform").fadeIn("1500");
 		document.getElementById("send").value="send";
         
@@ -530,7 +531,7 @@ loadurl();
 });
   $('#MusicFileUpload').bind("change", function(e) {
 document.getElementById("blurback1").style.display = "block";
-		document.getElementById("send").value="loading...";
+		document.getElementById("send").style.display="none";
 		$("#fillform").fadeOut("1500");
                 
 		var fileUploadControl = $("#MusicFileUpload")[0];
@@ -557,7 +558,7 @@ document.getElementById("blurback1").style.display = "none";
 
   $('#profilePhotoFileUpload').bind("change", function(e) {
 		document.getElementById("blurback1").style.display = "block";
-		document.getElementById("send").value="loading...";
+		document.getElementById("send").style.display = "none";
 		$("#fillform").fadeOut("1500");
          var fileUploadControl = $("#profilePhotoFileUpload")[0];
          var file = fileUploadControl.files[0];
@@ -574,6 +575,7 @@ document.getElementById("blurback1").style.display = "none";
            {
 		   document.getElementById("blurback1").style.display = "none";
 		$("#fillform").fadeIn("1500");
+		document.getElementById("send").style.display = "block";
 		document.getElementById("send").value="send";
         
              alert("time out");
