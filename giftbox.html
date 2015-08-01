@@ -77,7 +77,7 @@
 		var o = u.substring(i+13);
 		var valu =[];
 		console.log(o);
-		var newRef = new Firebase('https://new-expression.firebaseio.com/'+o+'/');
+		var newRef = new Firebase('https://friendshipday.firebaseio.com/'+o+'/');
 		newRef.on('child_added', function (snapshot) {
   var newPost1 = snapshot.val();
   valu.push(newPost1);
