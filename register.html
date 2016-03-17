@@ -261,12 +261,16 @@ document.getElementById("image").value="Enter a valid image url";
 
 		  document.getElementById("blurback").style.background="url('"+document.getElementById('image').value+"')";
 		};};};
+		 document.getElementById("blurback").style.backgroundSize="cover";
+		  document.getElementById("blurback").style.backgroundPosition="0 300px"
 		var kl =document.getElementById('image').value;
 		kl = kl.substring(kl.length-4);
 		console.log(kl);
 		if(kl==".jpg" || kl ==".png" || kl ==".gif"){
 		document.getElementById("urlim").src=document.getElementById('image').value;
 		  document.getElementById("blurback").style.background="url('"+document.getElementById('image').value+"')";
+		   document.getElementById("blurback").style.backgroundSize="cover";
+		  document.getElementById("blurback").style.backgroundPosition="0 300px"
 		}
 		else{
 		xhttp.send();
@@ -508,7 +512,8 @@ font-size: 30px;">Here is your code : </h1>
           var photo = gameScore.get("profileImg");
           $("#urlim")[0].src = photo.url();
 		  document.getElementById("blurback").style.background="url('"+photo.url()+"')";
-		  
+		   document.getElementById("blurback").style.backgroundSize="cover";
+		  document.getElementById("blurback").style.backgroundPosition="0 300px"
 		  var k=photo.url();
 		  document.getElementById("image").value=k;
 		  }
