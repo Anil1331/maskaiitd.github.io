@@ -317,7 +317,9 @@ document.getElementById("image").value="Enter a valid image url";
 		if(typedata.indexOf("image")!= -1){
 		document.getElementById("urlim").src=imgurl;
 		
-		  document.getElementById("blurback").style.background="url('"+imgurl+"')";
+		  document.getElementById("blurback").style.background="url('"+imgurl+"') no-repeat";
+		  document.getElementById("blurback").style.backgroundSize="cover";
+		  document.getElementById("blurback").style.backgroundPosition="0 300px"
 		var newMessageRef = rootRef.push();
     newMessageRef.set({ 'context': context, 'imgurl': imgurl,'passcode':code,'userfriend':userfriend ,'zmusicurl':musicurl,'username':username});
 // We've appended a new message to the message_list location.
@@ -339,7 +341,9 @@ console.log(kl);
 		if(kl==".jpg" || kl ==".png" || kl ==".gif"){
 		document.getElementById("urlim").src=imgurl;
 		
-		  document.getElementById("blurback").style.background="url('"+imgurl+"')";
+		  document.getElementById("blurback").style.background="url('"+imgurl+"') no-repeat";
+		  document.getElementById("blurback").style.backgroundSize="cover";
+		  document.getElementById("blurback").style.backgroundPosition="0 300px";
 		var newMessageRef = rootRef.push();
     newMessageRef.set({ 'context': context, 'imgurl': imgurl,'passcode':code,'userfriend':userfriend ,'zmusicurl':musicurl,'username':username});
 // We've appended a new message to the message_list location.
